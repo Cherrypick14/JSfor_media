@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-gb">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Video||player</title>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="player">
+        <video width="320" height="240" id="thevideo">
+            <source src="IndigoJael- DJ Khaled _ IM THE ONE_ cover ( 720 X 1280 ).mp4" type="video/mp4">
+            <source src="IndigoJael- DJ Khaled _ IM THE ONE_ cover ( 720 X 1280 ).ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+      <div>
+        <button id="PlayButton" >Play</button>
+        <button id="PauseButton" >Pause</button>
+        <button id="StopButton" >Stop</button>
+      </div>
+
+      <audio controls>
+        <source src="IndigoJael- DJ Khaled _ IM THE ONE_ cover ( 720 X 1280 ).ogg" type="audio/ogg">
+        <source src="IndigoJael- DJ Khaled _ IM THE ONE_ cover ( 720 X 1280 ).mp4" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+  </body>
+  <script type="text/javascript">
+   let playButton= document.getElementById("PlayButton");
+   let pauseButton= document.getElementById("PauseButton");
+   let stopButton= document.getElementById("StopButton");
+    let theVideo= document.getElementById("thevideo");
+    playButton.addEventListener("click", function(){
+        //play the video  
+        theVideo.play();
+    });
+      pauseButton.addEventListener("click", function(){
+          // pause the video
+        theVideo.pause();
+      });
+       stopButton.addEventListener("click", function(){
+            //stop the video
+         theVideo.pause();
+         theVideo.currentTime= 0;
+       });
+         
+
+  </script>
+</html>
