@@ -7,16 +7,21 @@
     font-weight: normal;
     font-style: normal;
 }
-
+body{
+   background:linear-gradient(-45deg,#8CD3D8,#8CD8B5);
+}
 video {
   border: 1px solid black;
+  position:absolute;
+  top:40px;
+  left:50%;
+  right:50%;
 }
 
 p {
   position: absolute;
   top: 310px;
 }
-
 .player {
   position: absolute;
 }
@@ -24,7 +29,7 @@ p {
 .controls {
   visibility: hidden;
   opacity: 0.5;
-  width: 400px;
+  width: 450px;
   border-radius: 10px;
   position: absolute;
   bottom: 20px;
@@ -37,7 +42,11 @@ p {
 }
 
 button, .controls {
-  background: linear-gradient(to bottom,#222,#666);
+  background: linear-gradient(to bottom,#8CD3D8,#666);
+  border-radius: 5px;
+  left: 50%;
+  position: absolute;
+  top:500px;
 }
 
 .player:hover .controls, player:focus .controls {
@@ -124,4 +133,11 @@ button:active {
 
 .active:before {
   color: red;
+}
+audio{
+  position:absolute;
+  top:550px;
+  left:50%;
+  background: linear-gradient(to bottom,#8CD3D8,#666);
+
 }
